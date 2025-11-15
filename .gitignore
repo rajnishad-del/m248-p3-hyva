@@ -1,0 +1,55 @@
+# Magento 2 standard
+/vendor/
+/pub/static/
+/pub/media/
+/var/
+!pub/media/.htaccess
+!pub/static/.htaccess
+
+# Composer & PHP
+/composer.lock
+/.idea/
+/.phpunit.result.cache
+/.php_cs.cache
+/.phpstorm.meta.php
+
+# Node & front-end
+/node_modules/
+/package-lock.json
+/npm-debug.log
+/yarn-error.log
+/.sass-cache/
+/pub/static/_requirejs/
+/pub/static/frontend/
+/pub/static/adminhtml/
+
+# Environment
+/.env
+/.env.*
+/.warden/
+/docker-compose.override.yml
+/.docker/
+
+# Logs
+/log/
+/*.log
+
+# IDE & OS
+/.vscode/
+/.idea/
+/*.iml
+.DS_Store
+Thumbs.db
+
+# Other temporary files
+*.swp
+*.bak
+*.tmp
+
+# Optional: ignore Magento generated CLI files
+/.setup_cron_jobs.json
+/.magento.env.php
+
+/bin
+/dev
+/generated
