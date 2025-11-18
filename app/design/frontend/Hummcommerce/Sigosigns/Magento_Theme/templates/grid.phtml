@@ -1,0 +1,37 @@
+<?php
+$items = [
+    [
+        'title' => 'Warning Sign',
+        'image' => '.renditions/wysiwyg/Beware_of_Dog_Signs_1_2.png',
+        'desc' => 'High quality reflective signxxxxxx',
+    ],
+    [
+        'title' => 'Caution Sign',
+        'image' => '.renditions/wysiwyg/Beware_of_Dog_Signs_1_2.png',
+        'desc' => 'Durable outdoor material',
+    ],
+    [
+        'title' => 'Notice Sign',
+        'image' => '.renditions/wysiwyg/Beware_of_Dog_Signs_1_2.png',
+        'desc' => 'UV protected print',
+    ],
+];
+?>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-yellow-400">
+    <?php foreach ($items as $item): ?>
+        <div class="border rounded-xl p-4 shadow bg-slate-400">
+            <img class="w-32 h-32 mx-auto"
+                 src="<?= $block->getViewFileUrl($item['image']) ?>"
+                 alt="<?= $item['title'] ?>" />
+
+            <h3 class="text-lg font-semibold mt-3 text-center">
+                <?= $item['title'] ?>
+            </h3>
+
+            <p class="text-sm text-gray-600 text-center bg-red-800">
+                <?= $item['desc'] ?>
+            </p>
+        </div>
+    <?php endforeach; ?>
+</div>

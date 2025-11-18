@@ -379,6 +379,7 @@ return [
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
         'Hyva_Theme' => 1,
+        'Hyva_CmsTailwindJit' => 1,
         'Hyva_CompatModuleFallback' => 1,
         'Hyva_Email' => 1,
         'Hyva_GraphqlTokens' => 1,
